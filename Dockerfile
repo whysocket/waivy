@@ -14,7 +14,7 @@ RUN bun install
 COPY . .
 
 # Set environment variables
-ENV NEXT_PUBLIC_CHAT_HUB_URL=https://chat-api.whysocket.dev
+ENV NEXT_PUBLIC_CHAT_HUB_URL=https://chat-api.whysocket.dev/chat
 
 # Build the Next.js application for production
 RUN bun run build
