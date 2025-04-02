@@ -1,7 +1,7 @@
 import type React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Flame, Lock, Shield, Users, Zap, Clock } from "lucide-react"
 
@@ -99,7 +99,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Chat Securely</h3>
               <p className="text-muted-foreground">
-                Exchange messages that exist only in your browser's memory. Not even we can read them!
+                {`Exchange messages that exist only in your browser's memory. Not even we can read them!`}
               </p>
               <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Lock className="h-6 w-6 text-primary mx-auto" />
@@ -113,7 +113,7 @@ export default function HomePage() {
               <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4 group-hover:bg-destructive/20 transition-colors duration-300">
                 <span className="text-2xl font-bold text-destructive">4</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Poof! It's Gone</h3>
+              <h3 className="text-xl font-semibold mb-2">{`Poof! It's Gone`}</h3>
               <p className="text-muted-foreground">
                 Close the tab and everything vanishes forever. Like your conversation never happened.
               </p>
